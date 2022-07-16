@@ -1,15 +1,24 @@
-from abc import ABCMeta, abstractmethod, ABC
-
 class CliOutputAbstract(metaclass=ABCMeta):
 
     @abstractmethod
-    def output_cli_info(self):
+    def output_cli(self):
         pass
 
-    def output_cli_data(self):
+
+class CliOutputInfo(CliOutputAbstract):
+
+    def output_cli(self):
         pass
 
-    def output_cli_note(self):
+
+class CliOutputData(CliOutputAbstract):
+
+    def output_cli(self):
         pass
 
+
+class CliOutputNote(CliOutputAbstract):
+
+    def output_cli(self):
+        pass
     
