@@ -4,7 +4,7 @@ import pickle
 
 class CliOutputAbstract(metaclass=abc.ABCMeta):
 
-    def __init__(self, f_name):
+    def __init__(self, data, f_name):
         self.data = data
         self.__f_name = None
         self.f_name = f_name
